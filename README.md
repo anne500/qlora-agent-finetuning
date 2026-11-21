@@ -26,15 +26,15 @@ Darsh Shah’s freeCodeCamp tutorial demonstrates supervised fine-tuning with a 
 | 🟦 Adaptation | Colab and training examples | Use a Tesla T4 and five original synthetic support examples. | Verified in Colab |
 | 🟦 Adaptation | Controlled comparison | Hold the base checkpoint, prompt, and generation settings fixed within each pair. | Verified in Colab |
 | 🟩 Implemented extension | Held-out evaluation | Compare cancellation, missing delivery, refund status, and a delivery guarantee. | [Four recorded pairs](docs/verification.md) |
-| 🟨 Implemented extension | CI evidence evaluation | Score JSON schema, evidence IDs, diagnosis, and missing-log behavior on four paired held-out incidents. | [Notebook ready](https://colab.research.google.com/github/anne500/qlora-agent-finetuning/blob/main/project11_bri_extension.ipynb), GPU results pending |
+| 🟩 Implemented extension | CI evidence evaluation | Score JSON schema, evidence IDs, diagnosis, and missing-log behavior on four paired held-out incidents. | [T4 results verified](docs/bri-extension-verification.md) |
 
 <a id="roadmap"></a>
 
 ## 🧭 Project roadmap
 
-| 🟦 Tutorial and setup | 🟩 Portfolio evidence | 🟨 Research verification |
+| 🟦 Tutorial and setup | 🟩 Portfolio evidence | 🟪 Research verification |
 | --- | --- | --- |
-| ✅ Load 4-bit Qwen and train LoRA on Colab | ✅ Compare four held-out replies and verify adapter reload | ✅ Implement the CI evidence cases and scorer. ⏳ Run the GPU comparison. |
+| ✅ Load 4-bit Qwen and train LoRA on Colab | ✅ Compare four held-out replies and verify adapter reload | ✅ Run the GPU comparison and verify the CI evidence scores. |
 
 <a id="workflow-architecture"></a>
 
@@ -89,6 +89,7 @@ The chart measures reply length. Review the paired responses to assess whether e
 | File | Contents |
 | --- | --- |
 | [Colab notebook](project11_qlora.ipynb) | Model loading, training, comparison, adapter reload, and download |
+| [BRI extension verification](docs/bri-extension-verification.md) | Strict and Markdown-normalized scores, missing-log behavior, and diagnosis errors |
 | [BRI extension notebook](project11_bri_extension.ipynb) | Synthetic fixtures, base and adapter comparisons, deterministic scoring, and JSON report |
 | [Verification log](docs/verification.md) | Runtime details, recorded replies, and the reload transcript |
 
@@ -96,7 +97,7 @@ The chart measures reply length. Review the paired responses to assess whether e
 
 ## 🟪 Thesis connection
 
-The Build Release and Integration Engineering extension uses four synthetic held-out CI incidents. Each incident is evaluated with its diagnostic log and with only its run summary. The notebook compares base and adapted responses on JSON schema, exact evidence IDs, diagnosis, and appropriate abstention. [Run the BRI extension in Colab](https://colab.research.google.com/github/anne500/qlora-agent-finetuning/blob/main/project11_bri_extension.ipynb). GPU comparison results are pending.
+The Build Release and Integration Engineering extension uses four synthetic held-out CI incidents. Each incident is evaluated with its diagnostic log and with only its run summary. The notebook compares base and adapted responses on JSON schema, exact evidence IDs, diagnosis, and appropriate abstention. [Run the BRI extension in Colab](https://colab.research.google.com/github/anne500/qlora-agent-finetuning/blob/main/project11_bri_extension.ipynb). On the Tesla T4 run, strict full passes rose from **0/8 to 6/8**. After removing Markdown fences, the comparison was **2/8 to 6/8**, with the gain coming from the four summary-only cases. [See the BRI verification results](docs/bri-extension-verification.md).
 
 ## 📚 Tutorial acknowledgment and attribution
 
