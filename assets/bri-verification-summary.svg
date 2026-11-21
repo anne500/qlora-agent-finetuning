@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="260" viewBox="0 0 1080 260" role="img" aria-labelledby="title desc">
+<title id="title">BRI verification at a glance</title>
+<desc id="desc">Base model versus QLoRA adapter after Markdown fence removal. Overall · after fence removal: 2/8 base, 6/8 adapted. Diagnostic log missing: 0/4 base, 4/4 adapted. Diagnostic log present: 2/4 base, 2/4 adapted.</desc>
+<rect width="1080" height="260" rx="20" fill="#F8FAFC"/>
+<path d="M20 0H1060Q1080 0 1080 20V89H0V20Q0 0 20 0" fill="#0F172A"/>
+<g font-family="DejaVu Sans, Arial, sans-serif">
+<text x="24" y="35" fill="#FFFFFF" font-size="25" font-weight="700">BRI verification at a glance</text>
+<text x="24" y="63" fill="#CBD5E1" font-size="15">Tesla T4 · Four held-out CI incidents · Base model to QLoRA adapter</text>
+<rect x="24" y="111" width="332" height="118" rx="12" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<text x="40" y="138" fill="#3B0764" font-size="15" font-weight="700">Overall · after fence removal</text>
+<text x="40" y="177" fill="#3B0764" font-size="28" font-weight="700">2/8 → 6/8</text>
+<text x="40" y="206" fill="#3B0764" font-size="14">Full passes across eight cases</text>
+<rect x="374" y="111" width="332" height="118" rx="12" fill="#DCFCE7" stroke="#15803D" stroke-width="2"/>
+<text x="390" y="138" fill="#14532D" font-size="15" font-weight="700">Diagnostic log missing</text>
+<text x="390" y="177" fill="#14532D" font-size="28" font-weight="700">0/4 → 4/4</text>
+<text x="390" y="206" fill="#14532D" font-size="14">Correctly reported insufficient evidence</text>
+<rect x="724" y="111" width="332" height="118" rx="12" fill="#FEF3C7" stroke="#B45309" stroke-width="2"/>
+<text x="740" y="138" fill="#78350F" font-size="15" font-weight="700">Diagnostic log present</text>
+<text x="740" y="177" fill="#78350F" font-size="28" font-weight="700">2/4 → 2/4</text>
+<text x="740" y="206" fill="#78350F" font-size="14">Correct diagnoses with exact evidence</text>
+</g>
+</svg>
