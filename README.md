@@ -97,6 +97,8 @@ The chart measures reply length. Review the paired responses to assess whether e
 
 ## 🟪 Thesis connection
 
+![Base model and QLoRA full-pass counts, comparing strict JSON with scores after Markdown fence removal](assets/bri-full-pass-results.svg)
+
 The Build Release and Integration Engineering extension uses four synthetic held-out CI incidents. Each incident is evaluated with its diagnostic log and with only its run summary. The notebook compares base and adapted responses on JSON schema, exact evidence IDs, diagnosis, and appropriate abstention. [Run the BRI extension in Colab](https://colab.research.google.com/github/anne500/qlora-agent-finetuning/blob/main/project11_bri_extension.ipynb). On the Tesla T4 run, strict full passes rose from **0/8 to 6/8**. After removing Markdown fences, the comparison was **2/8 to 6/8**, with the gain coming from the four summary-only cases. [See the BRI verification results](docs/bri-extension-verification.md).
 
 ## 📚 Tutorial acknowledgment and attribution
