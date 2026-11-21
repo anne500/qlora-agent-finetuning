@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="370" viewBox="0 0 940 370" role="img" aria-labelledby="title description">
+<title id="title">BRI extension full-pass results</title>
+<desc id="description">Strict JSON: Diagnostic log present, base 0/4, adapted 2/4. Run summary only, base 0/4, adapted 4/4. All cases, base 0/8, adapted 6/8. After Markdown fence removal: Diagnostic log present, base 2/4, adapted 2/4. Run summary only, base 0/4, adapted 4/4. All cases, base 2/8, adapted 6/8.</desc>
+<rect width="940" height="370" rx="20" fill="#F8FAFC"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#0F172A">
+<text x="28" y="41" font-size="25" font-weight="700">BRI extension full-pass results</text>
+<text x="28" y="68" font-size="14" fill="#475569">Four held-out incidents, each tested with and without its diagnostic log</text>
+<rect x="28" y="87" width="15" height="15" rx="3" fill="#2563EB"/><text x="51" y="100" font-size="14">Base model</text>
+<rect x="159" y="87" width="15" height="15" rx="3" fill="#7C3AED"/><text x="182" y="100" font-size="14">QLoRA adapter</text>
+<rect x="28" y="120" width="430" height="220" rx="14" fill="#FFFFFF" stroke="#CBD5E1"/>
+<text x="44" y="149" font-size="17" font-weight="700">Strict JSON</text>
+<text x="44" y="186" font-size="13">Diagnostic log present</text>
+<rect x="202" y="171" width="174" height="10" rx="3" fill="#E2E8F0"/>
+
+<text x="387" y="181" font-size="12" font-weight="700">0/4</text>
+<rect x="202" y="187" width="174" height="10" rx="3" fill="#E2E8F0"/>
+<rect x="202" y="187" width="87" height="10" rx="3" fill="#7C3AED"/>
+<text x="387" y="197" font-size="12" font-weight="700">2/4</text>
+<text x="44" y="240" font-size="13">Run summary only</text>
+<rect x="202" y="225" width="174" height="10" rx="3" fill="#E2E8F0"/>
+
+<text x="387" y="235" font-size="12" font-weight="700">0/4</text>
+<rect x="202" y="241" width="174" height="10" rx="3" fill="#E2E8F0"/>
+<rect x="202" y="241" width="174" height="10" rx="3" fill="#7C3AED"/>
+<text x="387" y="251" font-size="12" font-weight="700">4/4</text>
+<text x="44" y="294" font-size="13">All cases</text>
+<rect x="202" y="279" width="174" height="10" rx="3" fill="#E2E8F0"/>
+
+<text x="387" y="289" font-size="12" font-weight="700">0/8</text>
+<rect x="202" y="295" width="174" height="10" rx="3" fill="#E2E8F0"/>
+<rect x="202" y="295" width="130.5" height="10" rx="3" fill="#7C3AED"/>
+<text x="387" y="305" font-size="12" font-weight="700">6/8</text>
+<rect x="482" y="120" width="430" height="220" rx="14" fill="#FFFFFF" stroke="#CBD5E1"/>
+<text x="498" y="149" font-size="17" font-weight="700">After Markdown fence removal</text>
+<text x="498" y="186" font-size="13">Diagnostic log present</text>
+<rect x="656" y="171" width="174" height="10" rx="3" fill="#E2E8F0"/>
+<rect x="656" y="171" width="87" height="10" rx="3" fill="#2563EB"/>
+<text x="841" y="181" font-size="12" font-weight="700">2/4</text>
+<rect x="656" y="187" width="174" height="10" rx="3" fill="#E2E8F0"/>
+<rect x="656" y="187" width="87" height="10" rx="3" fill="#7C3AED"/>
+<text x="841" y="197" font-size="12" font-weight="700">2/4</text>
+<text x="498" y="240" font-size="13">Run summary only</text>
+<rect x="656" y="225" width="174" height="10" rx="3" fill="#E2E8F0"/>
+
+<text x="841" y="235" font-size="12" font-weight="700">0/4</text>
+<rect x="656" y="241" width="174" height="10" rx="3" fill="#E2E8F0"/>
+<rect x="656" y="241" width="174" height="10" rx="3" fill="#7C3AED"/>
+<text x="841" y="251" font-size="12" font-weight="700">4/4</text>
+<text x="498" y="294" font-size="13">All cases</text>
+<rect x="656" y="279" width="174" height="10" rx="3" fill="#E2E8F0"/>
+<rect x="656" y="279" width="43.5" height="10" rx="3" fill="#2563EB"/>
+<text x="841" y="289" font-size="12" font-weight="700">2/8</text>
+<rect x="656" y="295" width="174" height="10" rx="3" fill="#E2E8F0"/>
+<rect x="656" y="295" width="130.5" height="10" rx="3" fill="#7C3AED"/>
+<text x="841" y="305" font-size="12" font-weight="700">6/8</text>
+</g></svg>
