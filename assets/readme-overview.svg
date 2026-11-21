@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="350" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
+<title id="title">Project 11 reading map</title>
+<desc id="desc">Fine-tune Qwen, compare four held-out replies, reload the saved adapter, and plan an extension to CI evidence.</desc>
+<rect width="1200" height="350" rx="22" fill="#F8FAFC"/>
+<path d="M22 0H1178Q1200 0 1200 22V122H0V22Q0 0 22 0" fill="#0F172A"/>
+<g font-family="DejaVu Sans, Arial, sans-serif">
+<text x="32" y="31" font-size="13" font-weight="700" letter-spacing="2" fill="#93C5FD">AI LEARNING SERIES / PROJECT 11 READING MAP</text>
+<text x="32" y="71" font-size="30" font-weight="700" fill="#FFFFFF">Agent Fine-Tuning with SFT and QLoRA</text>
+<text x="32" y="101" font-size="16" fill="#CBD5E1">Qwen2.5-1.5B-Instruct on a Google Colab Tesla T4</text>
+<rect x="32" y="147" width="266" height="143" rx="14" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+<text x="50" y="175" font-size="12" font-weight="700" letter-spacing="1" fill="#172554">LEARNING</text>
+<text x="50" y="209" font-size="24" font-weight="700" fill="#172554">Fine-tune</text>
+<text x="50" y="241" font-size="15" fill="#172554">4-bit Qwen and five examples</text>
+<text x="50" y="267" font-size="14" fill="#172554">30 supervised training steps</text>
+<rect x="322" y="147" width="266" height="143" rx="14" fill="#DCFCE7" stroke="#15803D" stroke-width="2"/>
+<text x="340" y="175" font-size="12" font-weight="700" letter-spacing="1" fill="#14532D">PORTFOLIO EVIDENCE</text>
+<text x="340" y="209" font-size="24" font-weight="700" fill="#14532D">Compare</text>
+<text x="340" y="241" font-size="15" fill="#14532D">Four held-out prompts</text>
+<text x="340" y="267" font-size="14" fill="#14532D">Same base checkpoint</text>
+<rect x="612" y="147" width="266" height="143" rx="14" fill="#CCFBF1" stroke="#0F766E" stroke-width="2"/>
+<text x="630" y="175" font-size="12" font-weight="700" letter-spacing="1" fill="#134E4A">SAVED ARTIFACT</text>
+<text x="630" y="209" font-size="24" font-weight="700" fill="#134E4A">Reload</text>
+<text x="630" y="241" font-size="15" fill="#134E4A">Load the adapter from disk</text>
+<text x="630" y="267" font-size="14" fill="#134E4A">Exact match on one prompt</text>
+<rect x="902" y="147" width="266" height="143" rx="14" fill="#FEF3C7" stroke="#B45309" stroke-width="2"/>
+<text x="920" y="175" font-size="12" font-weight="700" letter-spacing="1" fill="#78350F">PLANNED RESEARCH</text>
+<text x="920" y="209" font-size="24" font-weight="700" fill="#78350F">Extend to BRI</text>
+<text x="920" y="241" font-size="15" fill="#78350F">Structured CI evidence</text>
+<text x="920" y="267" font-size="14" fill="#78350F">Missing-log behavior</text>
+<text x="32" y="326" font-size="14" fill="#475569">Explore the workflow  /  Run the notebook  /  Review the four comparisons</text>
+</g>
+</svg>
