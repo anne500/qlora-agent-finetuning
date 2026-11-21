@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="350" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
 <title id="title">Project 11 reading map</title>
-<desc id="desc">Fine-tune Qwen, compare four held-out replies, reload the saved adapter, and explore the CI evidence extension, with GPU results pending.</desc>
+<desc id="desc">Fine-tune Qwen, compare four held-out replies, reload the saved adapter, and explore the CI evidence extension, with verified GPU results.</desc>
 <rect width="1200" height="350" rx="22" fill="#F8FAFC"/>
 <path d="M22 0H1178Q1200 0 1200 22V122H0V22Q0 0 22 0" fill="#0F172A"/>
 <g font-family="DejaVu Sans, Arial, sans-serif">
@@ -26,7 +26,7 @@
 <text x="920" y="175" font-size="12" font-weight="700" letter-spacing="1" fill="#78350F">RESEARCH EXTENSION</text>
 <text x="920" y="209" font-size="24" font-weight="700" fill="#78350F">Evaluate BRI</text>
 <text x="920" y="241" font-size="15" fill="#78350F">Structured CI evidence</text>
-<text x="920" y="267" font-size="14" fill="#78350F">GPU results pending</text>
+<text x="920" y="267" font-size="14" fill="#78350F">4/4 missing-log cases</text>
 <text x="32" y="326" font-size="14" fill="#475569">Explore the workflow  /  Run the notebook  /  Review the four comparisons</text>
 </g>
 </svg>
