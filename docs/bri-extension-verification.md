@@ -2,7 +2,38 @@
 
 The reported Colab run trained a separate QLoRA adapter using eight synthetic training cases on a Tesla T4. The base checkpoint was `unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit`, and the reported training loss was **0.0590**. Evaluation used four held-out incidents, each tested with its diagnostic log and with only its run summary. The notebook’s scorer reproduced all 16 reply scores in the Colab report.
 
-## 📊 Strict JSON results
+## 🧩 How the evaluation works
+
+```mermaid
+flowchart TD
+    I["Four held-out CI incidents"] --> L["Diagnostic log included"]
+    I --> S["Run summary only"]
+    L --> P["Paired base and adapter replies"]
+    S --> P
+    P --> J{"Raw JSON meets the schema?"}
+    J -->|Yes| E["Check status, reason, and evidence IDs"]
+    J -->|No| F["Strict failure"]
+    E --> R["Strict pass counts"]
+    F --> R
+    P --> N["Remove an outer Markdown fence when present"]
+    N --> C["Re-score the same replies"]
+    classDef process fill:#DBEAFE,stroke:#2563EB,color:#172554,stroke-width:2px;
+    classDef model fill:#EDE9FE,stroke:#7C3AED,color:#3B0764,stroke-width:2px;
+    classDef decision fill:#FEF3C7,stroke:#B45309,color:#78350F,stroke-width:2px;
+    classDef output fill:#DCFCE7,stroke:#15803D,color:#14532D,stroke-width:2px;
+    classDef failure fill:#FEE2E2,stroke:#B91C1C,color:#7F1D1D,stroke-width:2px;
+    class I,L,S,E,N process;
+    class P model;
+    class J decision;
+    class R,C output;
+    class F failure;
+```
+
+## 📊 Scored results
+
+![Base model and QLoRA full-pass counts, comparing strict JSON with scores after Markdown fence removal](../assets/bri-full-pass-results.svg)
+
+### Strict JSON
 
 The notebook requires one raw JSON object. A full pass also requires the exact expected status, reason, and evidence IDs.
 
