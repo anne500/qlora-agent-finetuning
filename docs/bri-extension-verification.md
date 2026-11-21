@@ -1,5 +1,7 @@
 # 🧪 BRI extension verification
 
+![BRI verification summary showing overall results, missing-log abstention, and log-present diagnoses after Markdown fence removal](../assets/bri-verification-summary.svg)
+
 The reported Colab run trained a separate QLoRA adapter using eight synthetic training cases on a Tesla T4. The base checkpoint was `unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit`, and the reported training loss was **0.0590**. Evaluation used four held-out incidents, each tested with its diagnostic log and with only its run summary. The notebook’s scorer reproduced all 16 reply scores in the Colab report.
 
 ## 🧩 How the evaluation works
