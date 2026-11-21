@@ -1,6 +1,6 @@
 # 🧪 Customize an LLM for AI Agents with SFT and QLoRA
 
-![Project 11 reading map showing fine-tuning, held-out comparisons, adapter reload, and planned BRI research](assets/readme-overview.svg)
+![Project 11 reading map showing fine-tuning, held-out comparisons, adapter reload, and BRI research](assets/readme-overview.svg)
 
 **Project 11 · 🟦 Learn AI · 🟩 Portfolio evidence · 🟪 PhD research**
 
@@ -26,15 +26,15 @@ Darsh Shah’s freeCodeCamp tutorial demonstrates supervised fine-tuning with a 
 | 🟦 Adaptation | Colab and training examples | Use a Tesla T4 and five original synthetic support examples. | Verified in Colab |
 | 🟦 Adaptation | Controlled comparison | Hold the base checkpoint, prompt, and generation settings fixed within each pair. | Verified in Colab |
 | 🟩 Implemented extension | Held-out evaluation | Compare cancellation, missing delivery, refund status, and a delivery guarantee. | [Four recorded pairs](docs/verification.md) |
-| 🟨 Planned extension | CI evidence evaluation | Check structured evidence references and handling of missing logs. | Planned |
+| 🟨 Implemented extension | CI evidence evaluation | Score JSON schema, evidence IDs, diagnosis, and missing-log behavior on four paired held-out incidents. | [Notebook ready](https://colab.research.google.com/github/anne500/qlora-agent-finetuning/blob/main/project11_bri_extension.ipynb), GPU results pending |
 
 <a id="roadmap"></a>
 
 ## 🧭 Project roadmap
 
-| 🟦 Tutorial and setup | 🟩 Portfolio evidence | 🟨 Planned research |
+| 🟦 Tutorial and setup | 🟩 Portfolio evidence | 🟨 Research verification |
 | --- | --- | --- |
-| ✅ Load 4-bit Qwen and train LoRA on Colab | ✅ Compare four held-out replies and verify adapter reload | ⏳ Build CI evidence and missing-log cases |
+| ✅ Load 4-bit Qwen and train LoRA on Colab | ✅ Compare four held-out replies and verify adapter reload | ✅ Implement the CI evidence cases and scorer. ⏳ Run the GPU comparison. |
 
 <a id="workflow-architecture"></a>
 
@@ -89,13 +89,14 @@ The chart measures reply length. Review the paired responses to assess whether e
 | File | Contents |
 | --- | --- |
 | [Colab notebook](project11_qlora.ipynb) | Model loading, training, comparison, adapter reload, and download |
+| [BRI extension notebook](project11_bri_extension.ipynb) | Synthetic fixtures, base and adapter comparisons, deterministic scoring, and JSON report |
 | [Verification log](docs/verification.md) | Runtime details, recorded replies, and the reload transcript |
 
 <a id="thesis-connection"></a>
 
 ## 🟪 Thesis connection
 
-The planned Build Release and Integration Engineering extension will test whether an adapted model references structured CI evidence and reports when required logs are missing. The support evaluation motivates checking those behaviors directly alongside reply length.
+The Build Release and Integration Engineering extension uses four synthetic held-out CI incidents. Each incident is evaluated with its diagnostic log and with only its run summary. The notebook compares base and adapted responses on JSON schema, exact evidence IDs, diagnosis, and appropriate abstention. [Run the BRI extension in Colab](https://colab.research.google.com/github/anne500/qlora-agent-finetuning/blob/main/project11_bri_extension.ipynb). GPU comparison results are pending.
 
 ## 📚 Tutorial acknowledgment and attribution
 
